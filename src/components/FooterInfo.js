@@ -6,19 +6,16 @@ const FooterSection = styled.div`
   background: black;
   color: white;
   padding: 6rem 6rem;
-
-  h1 {
-    margin-bottom: 1rem;
-  }
 `;
 
 const FooterContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10px;
+    grid-template-rows: 100px;
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
+        
     }
 `;
 
@@ -30,9 +27,15 @@ const Col1 = styled.div`
     line-height: 1.4;
     cursor: pointer;
     h1{
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        
         &:hover {
         transform: scale(1.45);
         transition: 0.1s;
+    }
+    p{
+        font-weight: light;
     }
 
 `;
@@ -47,12 +50,15 @@ const Col2 = styled.div`
     justify-content: center;
     align-items: center;
     line-height: 2.0;
-
+    
     h4{
+        font-weight: lighter;
+
         &:hover {
         transform: scale(1.45);
         transition: 0.1s;
         cursor: pointer;
+        
     }
 `;
 
@@ -63,6 +69,9 @@ const Col3 = styled.div`
     align-items: center;
     line-height: 1.4;
     cursor: pointer;
+    h4{
+        font-weight: lighter;
+    }
     }
 `;
 const FooterInfo = () => {
